@@ -1,0 +1,172 @@
+<html>
+<head>
+    <title></title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="mainstyles.css">
+    <link href="//db.onlinewebfonts.com/c/93d992bb0b692e637a9c561b00f89dc1?family=TextaW00-HeavyItalic" rel="stylesheet" type="text/css"/>
+</head>
+    <div class="navbar">
+        <a href="home.html" class="navlink1"></a>
+        <a class="navlink"></a>
+        <a class="navlink"></a>
+        <a class="navlink3"></a>
+        <a class="navlinkclock" id="clock"></a>
+    </div>
+    <script>
+        function startTime() {
+          var today = new Date();
+          var h = today.getHours();
+          var m = today.getMinutes();
+          var s = today.getSeconds();
+          m = checkTime(m);
+          s = checkTime(s);
+          document.getElementById('clock').innerHTML =
+          h + ":" + m + ":" + s;
+          var t = setTimeout(startTime, 500);
+        }
+        function checkTime(i) {
+          if (i < 10) {i = "0" + i};
+          return i;
+        }
+        </script>
+        <body onload="startTime()">
+    <style>
+              body {
+                margin-left:10px;
+                margin-right:10px;
+              }
+              table.league {
+                width:90%;
+                box-shadow: 0 0 20px rgba(0,0,0,.1);
+                margin-top: 10px;
+                background-color:  #950740;
+                border-radius: 5px;
+                padding-bottom:10px;
+                padding-right:5px;
+                padding-left:5px;
+                overflow:hidden;
+              }
+              .league td {
+                text-align: center;
+                color:white;
+                font-family: "Segoe UI",Arial,sans-serif;
+                font-weight: 700;
+                border-top: 2px double white;
+                padding-top: 4px;
+                padding-bottom: 4px;
+              }
+              table.league:hover {
+                border-bottom: 3px solid #424242;
+                transition: 0.4s linear;
+              }
+              @media screen and (min-width:600px) {
+              .lgtabledivl {
+                text-align: center;
+                color:white;
+                font-family: "Segoe UI",Arial,sans-serif;
+                font-weight: 700;
+              }
+              .lgtabledivdata {
+                text-align: center;
+                margin-bottom: 0px;
+                margin-top:5px;
+                padding-top:5px;
+                font-size: 12px;
+                color:white;
+                font-family: "Segoe UI",Arial,sans-serif;
+                font-weight: 700;
+                border-top: 2px double white;
+              }
+              .lgtabledivl1 {
+                text-align: center;
+                color:white;
+                font-family: "Segoe UI",Arial,sans-serif;
+                font-weight: 700;
+              }
+            }
+              @media screen and (max-width:600px) {
+                .lgtabledivl {
+                text-align: center;
+                color:white;
+                font-family: "Segoe UI",Arial,sans-serif;
+                font-weight: 700;
+              }
+              .lgtabledata {
+                text-align: center;
+                margin-bottom: 0px;
+                margin-top:5px;
+                font-size: 12px;
+                color:white;
+                font-family: "Segoe UI",Arial,sans-serif;
+                font-weight: 700;
+                padding-top:5px;
+                border-top: 2px double white;
+              }
+              .lgtabledivl1 {
+                display:none;
+              }
+              .scrollboard {
+                overflow-x: scroll;
+              }
+              }
+    </style>
+<body>
+<center>
+<p class="welcometext">Welcome, Snell.</p>
+</center>
+<center class="scrollboard"><table class="league" style="padding-top:10px;">
+  <thead>
+      <tr id='head_row'>
+          <th class="lgtabledivl" scope="col" style="width:auto">Rank</th>
+          <th class="lgtabledivl" scope="col" style="width:auto">Team</th>
+          <th class="lgtabledivl" scope="col" style="width:auto">Manager</th>
+          <th class="lgtabledivl" scope="col" style="width:auto">Points</th>
+      </tr>
+  </thead>
+  <tbody id="table_body1">
+  </tbody>
+</table>
+<script type='text/javascript'>
+
+  async function get_standings() {
+      get_tbl = `https://fantasy.premierleague.com/api/leagues-classic/463168/standings/`
+      resp = await fetch(get_tbl)
+      data = await resp.json()
+
+      console.log(data);
+      table_body = document.getElementById('table_body')
+
+      while (table_body.children.length) table_body.removeChild(table_body.children[0])
+      data.forEach((element, idx) => {
+          let row = document.createElement('tr')
+
+          let timeArrival = document.createElement('td')
+          let flight = document.createElement('td')
+          let fromAirport = document.createElement('td')
+          let est_Time = document.createElement('a')
+          est_Time.className = "esttime";
+          let airlineName = document.createElement('td')
+          let status = document.createElement('td')
+
+          timeArrival.setAttribute('scope', 'row')
+          flight.textContent = element.flight.iataNumber
+          airlineName1 = element.airline.name + " "
+          airlineName.textContent = airlineName1.substring(0, airlineName1.indexOf(' '));
+          timeArrival.textContent = element.arrival.scheduledTime.substring(11,16)
+          fromAirport.textContent = element.departure.iataCode
+
+          row.appendChild(timeArrival)
+          timeArrival.append(est_Time);    
+          row.appendChild(flight)
+          row.appendChild(fromAirport)
+          row.appendChild(airlineName)
+          row.appendChild(status)
+          table_body.appendChild(row)
+      })
+  } get_standings()
+</script>
+</body>
+
+
+
+</html>

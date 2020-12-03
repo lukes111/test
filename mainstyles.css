@@ -1,0 +1,372 @@
+body {
+    display: block;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    background-color: #b8b8b8;
+}
+p {
+    font-family: "TextaW00-Heavy";
+    font-size: 16px;
+}
+@media only screen and (min-width:730px) {
+.navbar {
+    width:100%;
+    background-color: #1A1A1D;
+    color:whitesmoke;
+    padding-bottom: 15px;
+    padding-top:15px;
+    border-bottom:3px solid whitesmoke;
+    box-shadow: 0 0 20px rgba(0,0,0,.4);
+}
+.navlink {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "TextaW00-HeavyItalic";
+    margin-left:10px;
+    margin-right:10px;
+    margin-top:20px;
+    margin-bottom:5px;
+    padding-left:30px;
+    padding-right:30px;
+    padding-top:15px;
+    padding-bottom:15px;
+    text-align: center;
+    text-decoration: none;
+    color: whitesmoke;
+}
+.navlink:hover {
+    background-color: #950740;
+    cursor: pointer;
+    padding-bottom:20px;
+    border-bottom:3px solid whitesmoke;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+}
+.navlink1 {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "TextaW00-Heavy";
+    margin-left:10px;
+    margin-right:30px;
+    margin-top:20px;
+    margin-bottom:5px;
+    padding-left:30px;
+    padding-right:30px;
+    padding-top:15px;
+    padding-bottom:15px;
+    text-align: center;
+    text-decoration: none;
+    color: whitesmoke;
+}
+.navlink1:hover {
+    background-color: #950740;
+    cursor: pointer;
+    padding-bottom:20px;
+    border-bottom:3px solid whitesmoke;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+}
+.navlink3 {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "TextaW00-HeavyItalic";
+    margin-left:10px;
+    margin-right:10px;
+    margin-top:20px;
+    margin-bottom:5px;
+    padding-left:30px;
+    padding-right:30px;
+    padding-top:15px;
+    padding-bottom:15px;
+    text-align: center;
+    text-decoration: none;
+    color: whitesmoke;
+}
+.navlink3:hover {
+    background-color: #950740;
+    cursor: pointer;
+    padding-bottom:20px;
+    border-bottom:3px solid whitesmoke;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+}
+.navlinkclock {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "TextaW00-HeavyItalic";
+    margin-left:10px;
+    margin-right:30px;
+    margin-top:-15px;
+    margin-bottom:5px;
+    padding-left:30px;
+    padding-right:30px;
+    padding-top:15px;
+    padding-bottom:15px;
+    text-align: center;
+    text-decoration: none;
+    color: whitesmoke;
+    position: absolute;
+    right:0;
+}
+.navlinkclock:hover {
+    background-color: #950740;
+    cursor: pointer;
+    padding-bottom:20px;
+    border-bottom:3px solid whitesmoke;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+}
+.welcometext {
+    margin-left:10px;
+    color:black;
+    font-weight: 600;
+    font-family: "TextaW00-Heavy";
+    font-size: 40px;
+    margin-top:30px;
+}
+.subject {
+    width:28%;
+    background-color: #950740;
+    color:whitesmoke;
+    padding: 0px 20px 5px 5px;
+    margin-left:10px;
+    margin-right:10px;
+    margin-bottom:10px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 15px;
+}
+.subjectname {
+    font-size: 25px;
+    font-weight: 600;
+    color:whitesmoke;
+    font-family: "TextaW00-Heavy";
+}
+}
+@media only screen and (min-width:435px) and (max-width:730px) {
+    .navbar {
+        width:100%;
+        background-color: #1A1A1D;
+        color:whitesmoke;
+        padding-bottom: 15px;
+        padding-top:15px;
+        border-bottom:3px solid whitesmoke;
+        box-shadow: 0 0 20px rgba(0,0,0,.4);
+    }
+    .navlink {
+        font-size: 14px;
+        font-weight: 600;
+        font-family: "TextaW00-HeavyItalic";
+        margin-left:0px;
+        margin-right:0px;
+        margin-top:20px;
+        margin-bottom:5px;
+        padding-left:15px;
+        padding-right:15px;
+        padding-top:15px;
+        padding-bottom:15px;
+        text-align: center;
+        text-decoration: none;
+        color: whitesmoke;
+    }
+    .navlink:hover {
+        background-color: #950740;
+        cursor: pointer;
+        padding-bottom:20px;
+        border-bottom:3px solid whitesmoke;
+        transition: 0.5s ease;
+        -webkit-transition: 0.5s ease;
+        -moz-transition: 0.5s ease;
+        -o-transition: 0.5s ease;
+    }
+    .navlink1 {
+        font-size: 14px;
+        font-weight: 600;
+        font-family: "TextaW00-Heavy";
+        margin-left:10px;
+        margin-right:10px;
+        margin-top:20px;
+        margin-bottom:5px;
+        padding-left:30px;
+        padding-right:30px;
+        padding-top:15px;
+        padding-bottom:15px;
+        text-align: center;
+        text-decoration: none;
+        color: whitesmoke;
+    }
+    .navlink1:hover {
+        background-color: #950740;
+        cursor: pointer;
+        padding-bottom:20px;
+        border-bottom:3px solid whitesmoke;
+        transition: 0.5s ease;
+        -webkit-transition: 0.5s ease;
+        -moz-transition: 0.5s ease;
+        -o-transition: 0.5s ease;
+    }
+    .navlink3 {
+        font-size: 14px;
+        font-weight: 600;
+        font-family: "TextaW00-HeavyItalic";
+        margin-left:0px;
+        margin-right:0px;
+        margin-top:20px;
+        margin-bottom:5px;
+        padding-left:15px;
+        padding-right:15px;
+        padding-top:15px;
+        padding-bottom:15px;
+        text-align: center;
+        text-decoration: none;
+        color: whitesmoke;
+    }
+    .navlink3:hover {
+        background-color: #950740;
+        cursor: pointer;
+        padding-bottom:20px;
+        border-bottom:3px solid whitesmoke;
+        transition: 0.5s ease;
+        -webkit-transition: 0.5s ease;
+        -moz-transition: 0.5s ease;
+        -o-transition: 0.5s ease;
+    }
+    .navlinkclock {
+        display:none;
+    }
+    .navlinkclock:hover {
+        background-color: #950740;
+        cursor: pointer;
+        padding-bottom:20px;
+        border-bottom:3px solid whitesmoke;
+        transition: 0.5s ease;
+        -webkit-transition: 0.5s ease;
+        -moz-transition: 0.5s ease;
+        -o-transition: 0.5s ease;
+    }
+    .welcometext {
+        margin-left:10px;
+        color:black;
+        font-weight: 600;
+        font-family: "TextaW00-Heavy";
+        font-size: 40px;
+        margin-top:10px;
+    }
+}
+@media only screen and (max-width:435px) {
+    .navbar {
+        width:100%;
+        background-color: #1A1A1D;
+        color:whitesmoke;
+        padding-bottom: 15px;
+        padding-top:15px;
+        border-bottom:3px solid whitesmoke;
+        box-shadow: 0 0 20px rgba(0,0,0,.4);
+    }
+    .navlink {
+        font-size: 14px;
+        font-weight: 600;
+        font-family: "TextaW00-HeavyItalic";
+        margin-left:0px;
+        margin-right:0px;
+        margin-top:20px;
+        margin-bottom:5px;
+        padding-left:15px;
+        padding-right:15px;
+        padding-top:15px;
+        padding-bottom:15px;
+        text-align: center;
+        text-decoration: none;
+        color: whitesmoke;
+    }
+    .navlink:hover {
+        background-color: #950740;
+        cursor: pointer;
+        padding-bottom:20px;
+        border-bottom:3px solid whitesmoke;
+        transition: 0.5s ease;
+        -webkit-transition: 0.5s ease;
+        -moz-transition: 0.5s ease;
+        -o-transition: 0.5s ease;
+    }
+    .navlink1 {
+        font-size: 14px;
+        font-weight: 600;
+        font-family: "TextaW00-Heavy";
+        margin-left:10px;
+        margin-right:10px;
+        margin-top:20px;
+        margin-bottom:5px;
+        padding-left:30px;
+        padding-right:30px;
+        padding-top:15px;
+        padding-bottom:15px;
+        text-align: center;
+        text-decoration: none;
+        color: whitesmoke;
+    }
+    .navlink1:hover {
+        background-color: #950740;
+        cursor: pointer;
+        padding-bottom:20px;
+        border-bottom:3px solid whitesmoke;
+        transition: 0.5s ease;
+        -webkit-transition: 0.5s ease;
+        -moz-transition: 0.5s ease;
+        -o-transition: 0.5s ease;
+    }
+    .navlink3 {
+        display:none;
+    }
+    .navlink3:hover {
+        background-color: #950740;
+        cursor: pointer;
+        padding-bottom:20px;
+        border-bottom:3px solid whitesmoke;
+        transition: 0.5s ease;
+        -webkit-transition: 0.5s ease;
+        -moz-transition: 0.5s ease;
+        -o-transition: 0.5s ease;
+    }
+    .navlinkclock {
+        display:none;
+    }
+    .navlinkclock:hover {
+        background-color: #950740;
+        cursor: pointer;
+        padding-bottom:20px;
+        border-bottom:3px solid whitesmoke;
+        transition: 0.5s ease;
+        -webkit-transition: 0.5s ease;
+        -moz-transition: 0.5s ease;
+        -o-transition: 0.5s ease;
+    }
+    .welcometext {
+        margin-left:10px;
+        color:black;
+        font-weight: 600;
+        font-family: "TextaW00-Heavy";
+        font-size: 40px;
+        margin-top:10px;
+    }
+}
+@import url(//db.onlinewebfonts.com/c/93d992bb0b692e637a9c561b00f89dc1?family=TextaW00-HeavyItalic);
+@font-face {
+    font-family: "TextaW00-HeavyItalic"; 
+    src: url("//db.onlinewebfonts.com/t/93d992bb0b692e637a9c561b00f89dc1.eot"); 
+    src: url("//db.onlinewebfonts.com/t/93d992bb0b692e637a9c561b00f89dc1.eot?#iefix") 
+    format("embedded-opentype"), url("//db.onlinewebfonts.com/t/93d992bb0b692e637a9c561b00f89dc1.woff2") 
+    format("woff2"), url("//db.onlinewebfonts.com/t/93d992bb0b692e637a9c561b00f89dc1.woff") format("woff"), 
+    url("//db.onlinewebfonts.com/t/93d992bb0b692e637a9c561b00f89dc1.ttf") format("truetype"), 
+    url("//db.onlinewebfonts.com/t/93d992bb0b692e637a9c561b00f89dc1.svg#TextaW00-HeavyItalic") format("svg"); 
+}
